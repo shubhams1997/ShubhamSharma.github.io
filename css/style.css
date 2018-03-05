@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr{
+    color: rgba(228, 228, 228, 0.144);
+    font-weight: 10;
+    margin: 0 5px;
+}
+.container{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.active{
+    color: black;
+    border-bottom: 3px solid rgb(89, 170, 245);
+}
+
+/* HEADER */
+
+/* BANNER BACKTOUND VIDEO */
+#bannervideo{
+    object-position: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
+    min-width: 1000px;
+    opacity: 0.5;
+}
+
+/* LOGO AT LEFT SIDE */
+
+header > div > p{
+    width: 280px;
+    line-height: 50px;
+    margin: 30px 0 0 60px;
+    float: left;
+}
+#logo{
+    font-weight: 600;
+}
+
+/* NAVIGATION BAR STARTS FROM HERE */
+nav{
+    float: right;
+    margin-top:30px;
+}
+
+nav > ul {
+    list-style: none;
+}
+
+nav > ul > li{
+    float: left;
+    
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    line-height: 50px;
+    display: block;
+    padding: 0 35px;
+    color: rgb(117, 117, 117);
+}
+
+nav > ul > li > a:hover , .opner >li>a:hover , .subopner>li > a:hover{
+    color: rgb(89, 170, 245);
+}
+
+.opner,.subopner{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+}
+.opner, .subopner{
+    position: absolute;
+    width: 170px;
+    display: none;
+    list-style: none;
+    background-color: white;
+    max-height: 200px;
+}
+.subopner{
+    position: relative;
+    left: -170px;
+    top: -40px;
+}
+
+.opner > li > a ,.subopner > li > a{
+    display: block;
+    line-height: 20px;
+    color: rgb(117, 117, 117);
+    padding: 15px;
+    text-decoration: none;
+}
+nav > ul > li:hover .opner{
+    display: block;
+}
+nav > ul > li > ul > li:hover .subopner{
+    display: block;
+}
+
+/* NAVIGATION BAR ENDS HERE */
+/* MAIN HEADING */
+
+.content{
+    color: rgb(77, 77, 77);
+    text-align: center;
+    margin: 80px 0;
+    padding: 30px; 
+}
+
+.content > h2{
+    font-size: 38px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.content > h3{
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+.content > p{
+    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.content > h4 > a{
+    color :rgb(97, 171, 206);
+    padding: 15px 60px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid rgb(97, 171, 206);
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.content > h4 > a:hover{
+    background-color: rgba(52, 132, 207, 0.137);
+}
+
+/* HEADER ENDS HERE */
+
+
+
+/* MAIN */
+.specification{
+    background-color: rgba(255, 255, 255, 0.774);
+}
+
+.specification > .container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.section{
+    margin: 50px 30px;
+    /* background-color: rgba(255, 255, 255, 0.76); */
+    text-align: center;
+    color: rgb(77, 77, 77);
+    font-size: 1.2rem;
+}
+
+.icon{
+    border: 5px solid rgb(97, 171, 206);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 3rem;
+    color: rgb(97, 171, 206);
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.specificationdetail{
+    margin: 10px;
+    padding: 15px;
+   
+}
+.specificationdetail > h4{
+    margin: 10px 0 20px 0;
+}
+.specificationdetail > p{
+    color: rgb(116, 116, 116);
+    font-size: 1rem; 
+}
+
+/* specification END */
+
+/* FEATURES */
+
+.features{
+    background-color: rgb(97, 171, 206);
+    color: white;
+    padding: 100px 0 0 0; 
+    text-align: center;
+}
+
+#parahead{
+    font-size: 2rem;
+}
+#paradesc{
+    width:60vw;
+    margin: 50px auto;
+    line-height: 30px;
+}
+
+.features > .container >ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    
+}
+
+.features > .container >ul> li{  
+    width: 33%;
+    color: white;
+    line-height: 100px;
+    font-size: 1.5rem;
+}
+.features > .container >ul> li:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(89, 170, 245);
+}
+
+/* .featuresdetail{
+    display: block;
+    background-color: #fff;
+    height: 300px;
+} */
+
+
+/* DECORATION */
+
+.decoration{
+    background-color: rgb(128, 179, 48);
+}
+
+.decoration > .content{
+    margin: 0;
+    color: white;
+}
+
+.decoration > .content > .parahead{
+    font-size: 2rem;
+    margin: 40px;
+}
+
+.decoration > .content > .paradesc{
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 100px;
+    line-height: 30px;
+}
+
+/* DECORATION ENDS HERE */
+
+
+/* SQUARE SECTION */
+
+.square{
+    background-color: rgb(245, 245, 245);
+    padding: 50px;
+}
+
+.square > .container > .description{
+    text-align: center;
+    color: rgb(73, 73, 73);
+}
+
+.square > .container > .description > .parahead{
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.square > .container > .description > .paradesc{
+    font-size: 1rem;
+    margin: 30px;
+    line-height: 30px;
+}
+
+.slice{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 80%;
+}
+.article{
+    background-color: #fff;
+    margin: 50px 0;
+}
+.article > .description{
+    padding-bottom: 50px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.article > .description > .parahead{
+    color: rgb(20, 20, 20);
+    padding: 30px;
+    font-size: 1.5rem;
+}
+
+.article > .description > .paradesc{
+    color: rgb(121, 121, 121);
+    padding: 30px;
+    padding-top :0;
+}
+
+.article > .description > a{
+    text-decoration: none;
+    color: rgb(89, 170, 245);
+    border: 4px solid rgb(89, 170, 245);
+    border-radius: 100px;
+    padding: 10px 20px;
+    margin:20px;
+}
+.article > .description > a:hover{
+    background-color: rgba(52, 132, 207, 0.137);
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color: rgb(255, 255, 255);
+    padding: 100px;
+}
+.footerslice{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.footerslice > .description {
+    width: 50vw;
+    
+}
+.footerslice > .description > .parahead {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.footerslice > .description > .paradesc {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.footerslice > .links{
+    display: flex;
+    padding: 0 30px;
+    width: 60vw;
+}
+.footerslice > .links > .link1{
+    padding: 0 20px;
+}
+.footerslice > .links > .link1 > p{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.footerslice > .links > .link1 > ul {
+    list-style: none;
+}
+.footerslice > .links > .link1 > ul > li > a{
+    line-height: 35px;
+    text-decoration-style: dotted;
+    color: rgb(65, 65, 65);
+}
+
+.footerslice > .links > .link1 > ul > li > a:hover{
+    color: royalblue;
+}
+
+.contact > .parahead {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact > a {
+    color: rgb(53, 53, 53);
+    font-size: 2rem;
+    margin-top:20px; 
+}
+
+.owner{
+    text-align:center;
+    padding: 20px;
+    margin-top: 50px;
+}
